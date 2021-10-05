@@ -7,12 +7,13 @@ API to fetch elements of the periodic table in JSON format. Uses Pandas for dump
 -JSON
 
 
-##install requirements
+##install requirements:
+
 -to install Flask
-   `pip install Flask`
+> `pip install Flask`
 
 -to install JSON
-   `pip install json`
+> `pip install json`
 
 ## Overview
 The following document will specify how to use the API to fetch the periodic elements in JSON. Also it will state different methods throught which the elements can be fetch.
