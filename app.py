@@ -17,7 +17,15 @@ def all():
         message = "method not allowed"
         return jsonify(message=message)
 
-
+@app.route("/dev", methods=["GET", "POST"])
+def dev():
+    devlpr = "Project: Periodic Table API\n\nLanguage: Python 3\nLib: flask\nMaintainer: TheTechnoHack"
+    if request.method == "GET":
+        return devlpr
+    else:
+        message = "method not allowed"
+        return jsonify(message=message)
+        
 @app.route("/element/atomicnumber", methods=["GET", "POST"])
 def atomicnumber():
     if request.method == "GET":
